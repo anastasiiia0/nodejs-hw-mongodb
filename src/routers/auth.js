@@ -11,7 +11,7 @@ import {
   loginUserController,
   logoutUserController,
   refreshUserSessionController,
-  requestResetTokenController,
+  requestResetEmailController,
   resetPasswordController,
 } from '../controllers/auth.js';
 import { validateBody } from '../middlewares/validateBody.js';
@@ -37,7 +37,7 @@ router.post('/refresh', ctrlWrapper(refreshUserSessionController));
 router.post(
   '/request-reset-email',
   validateBody(requestResetEmailShema),
-  ctrlWrapper(requestResetTokenController),
+  ctrlWrapper(requestResetEmailController),
 );
 
 router.post(
