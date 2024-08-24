@@ -196,8 +196,7 @@
                 "required": [
                   "name",
                   "phoneNumber",
-                  "contactType",
-                  "userId"
+                  "contactType"
                 ],
                 "properties": {
                   "name": {
@@ -218,6 +217,7 @@
                   "isFavourite": {
                     "description": "Whether is contact favourite",
                     "type": "boolean",
+                    "default": false,
                     "example": false
                   },
                   "contactType": {
